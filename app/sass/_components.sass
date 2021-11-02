@@ -1,0 +1,221 @@
+/*
+ * Buttons styling
+ */
+
+.button
+	display: inline-block
+	line-height: 1
+	transition: all 0.25s
+	min-width: min-content
+	white-space: nowrap
+	transition: all .25s ease-in-out
+	&:focus
+		outline: none
+	&:hover
+		text-decoration: none
+	&_primary
+		&:hover
+
+		&:active
+
+	&_secondary
+		&:hover
+
+		&:active
+
+	&:disabled, 
+	&[disabled]
+		color: white !important
+		border-color: #d7d7d7 !important
+		background-color: #d7d7d7 !important
+		box-shadow: none
+
+.btn
+	padding: 14px 40px
+	border-radius: 0 18px 0 0
+
+.btn-yellow
+	background-color: $yellow
+
+.btn-black
+	background-color: $black
+	& span
+		color: $white
+
+/*
+ * Buttons styling ends
+ */
+
+
+
+
+/*Text Arrow styling*/
+.text-arrow
+	display: flex
+	align-items: center
+	cursor: pointer
+
+.text-arrow span
+	margin-right: 14px
+	font-weight: 700
+	transition: margin-right .3s ease
+
+.text-arrow:hover span
+	margin-right: 24px
+
+/*Text Arrow styling ends*/
+
+
+/*Marked Title styling*/
+
+.marked-title
+	position: relative
+
+.mark
+	position: absolute
+	width: 170px
+	top: -34px
+	height: 4px
+	background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%)
+	border-radius: 2px
+
+
+.mark-full
+	width: 100%
+
+/*Marked Title styling ends*/
+
+
+/*Dropdown styling*/
+.dropdown select
+	border: none
+	font-weight: bold
+	cursor: pointer
+
+.dropdown .form-select:focus
+	box-shadow: none
+
+/*Dropdown styling ends*/
+
+/*Card styling*/
+
+
+.card
+	box-shadow: 0 32px 34px rgba(0, 0, 0, 0.133714)
+	cursor: pointer
+	border-radius: 25px
+	overflow: hidden
+
+.card__image img
+	width: 100%
+	object-fit: cover
+	transition: transform .2s ease
+
+.card__image:hover img
+	transform: scale(1.1)
+
+.card__title
+	padding: 30px
+
+.card__footer
+	border-top: 1px solid $light-gray
+
+.card__footer-item
+	display: flex
+	padding: 20px
+	align-items: center
+	justify-content: center
+	border-right: 1px solid $light-gray
+
+.card__footer-item:last-child
+	border: none
+
+.card__footer-info
+	font-weight: 700
+	margin-left: 10px
+	font-size: 17px
+
+/*Cards styling ends*/
+
+
+/*Author styling*/
+.author__icon
+	margin-right: 12px
+
+.author__name
+	font-size: 15px
+	font-weight: 700
+
+.author__position
+	font-size: 15px
+	font-weight: 700
+	color: $light-gray
+/*Author styling ends*/
+
+/*Social styling*/
+.social
+	display: flex
+	align-items: center
+	justify-content: space-around
+/*Social styling ends*/
+
+.yellow
+	color: $yellow
+
+/*Burger styling*/
+.burger
+	display: none
+	position: fixed
+	width: 50px
+	height: 50px
+	align-items: center
+	background-color: $yellow
+	border-radius: 50%
+	right: 20px
+	transition-duration: 0.5s
+
+
+@media only screen and (max-width: 991px)
+	.burger
+		display: flex
+
+.burger .icon
+	transition-duration: 0.5s
+	position: absolute
+	height: 2px
+	width: 24px
+	left: 12px
+	background-color: #fff
+
+.burger .icon:before
+	transition-duration: 0.5s
+	position: absolute
+	width: 24px
+	height: 2px
+	background-color: #fff
+	content: ""
+	top: -6px
+
+.burger .icon:after
+	transition-duration: 0.5s
+	position: absolute
+	width: 24px
+	height: 2px
+	background-color: #fff
+	content: ""
+	top: 6px
+
+.burger.open .icon
+	transition-duration: 0.5s
+	background: transparent
+
+.burger.open .icon:before
+	transform: rotateZ(45deg) scaleX(1.25) translate(4px, 4px)
+
+.burger.open .icon:after
+	transform: rotateZ(-45deg) scaleX(1.25) translate(4px, -4px)
+
+.burger:hover
+	cursor: pointer
+
+/*Burger styling ends*/

@@ -1,0 +1,66 @@
+.header
+	position: absolute
+	top: 0
+	width: 100%
+	z-index: 3
+
+.header .container
+	padding-top: 32px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	position: relative
+
+
+/*
+	* Navigation styling
+ */
+
+.nav
+	display: flex
+	align-items: center
+
+.nav__item
+	margin-right: 60px
+	font-size: 15px
+	font-weight: bold
+	color: $white
+	cursor: pointer
+	transition: color .3s ease
+	&:hover
+		color: $yellow
+
+/*
+ * Navigation styling ends
+ */
+
+
+
+@media only screen and (max-width: 1199px)
+	.header
+
+
+@media only screen and (max-width: 991px)
+	.header
+
+	.header__nav
+		position: fixed
+		right: -300px
+		flex-direction: column
+		gap: 20px
+		padding-top: 80px
+		width: 300px
+		height: 100vh
+		background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 45.25%)
+		top: 0
+		transition: right .3s ease
+		&.open
+			right: 0
+
+
+	
+@media only screen and (max-width: 767px)
+	.header
+
+@media only screen and (max-width: 575px)
+	.header
