@@ -1,0 +1,61 @@
+/*
+ * Comments section styling
+ */
+
+.comments {
+	padding: 150px 0;
+}
+.comment {
+	margin-bottom: 30px;
+	.&.active .&__title {
+		visibility: visible;
+	}
+	.&.active .&__author {
+		color: $white;
+		background-color: $black;
+
+	}
+	.&__title {
+		visibility: hidden;
+		margin-bottom: 60px;
+	}
+
+	.&__author {
+		cursor: pointer;
+		padding: 40px;
+		transition: all .3s ease;
+		&:hover {
+			background-color: $black;
+			color: $white;
+		}
+	}
+
+
+}
+
+@media only screen and (max-width: 1199px) {
+	.comments
+}
+
+@media only screen and (max-width: 991px) {
+	.comments
+}
+@media only screen and (max-width: 767px) {
+	.comments {
+		padding: 90px 0;
+	}
+	.comment__title {
+		visibility: visible;
+		margin-bottom: 20px;
+	}
+	.comment__author {
+		padding: 10px
+	}
+	.comment.active .comment__author {
+		color: $black;
+		background-color: $white;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.comments
+}

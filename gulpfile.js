@@ -6,7 +6,7 @@ const
 	uglify = require('gulp-uglify'),
 	browsersync = require('browser-sync').create(),
 	del = require('del'),
-	jade2 = require('gulp-jade'),
+	//jade2 = require('gulp-jade'),
 	rename = require('gulp-rename'),
 	cssnano = require('gulp-cssnano'),
 	cleanCSS = require('gulp-clean-css'),
@@ -46,7 +46,7 @@ function compileScripts() {
 }
 
 function compileSass(done) {
-  return gulp.src('app/sass/main.sass')
+  return gulp.src('app/scss/main.scss')
     .pipe(sass().on("error", notify.onError()))
     .pipe(rename({suffix: '.min', prefix : ''}))
     .pipe(autoprefixer(['last 15 versions', '>1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -57,24 +57,24 @@ function compileSass(done) {
 	done();
 }
 
-function compileJade2(done) {
-  	return gulp.src('app/jade/**/*.jade')
-	.pipe(
-		jade2({
-			pretty: true
-		}).on('error', notify.onError(function (error) {
-			return 'An error occurred while compiling jade.\nLook in the console for details.\n' + error;
-		}))
-	)
-    .pipe(gulp.dest('app'))
-    .pipe(browsersync.stream());
-  
-	done();
-}
+
+//function compileJade2(done) {
+  	//return gulp.src('app/jade/**/*.jade')
+	//.pipe(
+	//	jade2({
+			//pretty: true
+	//	}).on('error', notify.onError(function (error) {
+	//		return 'An error occurred while compiling jade.\nLook in the console for details.\n' + error;
+	//	}))
+	//)
+   // .pipe(gulp.dest('app'))
+   // .pipe(browsersync.stream());
+//	done();
+//}
 
 function watchFiles(done) {
-	gulp.watch('app/sass/**/*.sass', gulp.series(compileSass));
-	gulp.watch('app/jade/**/*.jade', gulp.series(compileJade2));
+	gulp.watch('app/scss/**/*.scss', gulp.series(compileSass));
+	//gulp.watch('app/jade/**/*.jade', gulp.series(compileJade2));
 
 	gulp.watch('app/*.html', browsersync.reload);
 	gulp.watch('app/css/*.css', browsersync.reload);
@@ -127,7 +127,8 @@ function moveJSToDist(done) {
 
 gulp.task('build',  
 	gulp.series(
-		removeDist,compileSass, compileCSSlibs, compileScripts, compileJade2,
+		removeDist,compileSass, compileCSSlibs, compileScripts,
+		//compileJade2,
 		moveFontsToDist, moveImgToDist, moveHtmlToDist, moveCssToDist, moveJSToDist
 	), function(done) {
 		done();

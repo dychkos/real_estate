@@ -1,0 +1,44 @@
+/*
+ * House section styling
+ */
+
+.house {
+	padding-top: 60px;
+	background-color: $background-gray;
+
+	.&__info {
+		background-color: $yellow;
+		height: 400px;
+	}
+	.&__order {
+		border-radius: 18px;
+		padding: 20px;
+		background-color: $white;
+	}
+	.&__order-author {
+		margin-bottom: 12px;
+		padding: 12px;
+		background-color: $background-gray;
+		border-radius: 10px;
+
+	}
+	.&__order-field {
+		margin-bottom: 12px;
+	}
+}
+
+
+@media only screen and (max-width: 1199px){
+	.house
+}
+
+@media only screen and (max-width: 991px){
+	.house
+}
+
+@media only screen and (max-width: 767px){
+	.house
+}
+@media only screen and (max-width: 575px){
+	.house
+}

@@ -1,0 +1,44 @@
+/*
+ * Listings section styling
+ */
+
+.listings {
+	padding-top: 220px;
+	padding-bottom: 390px;
+	background-color: $background-gray;
+	.&__title {
+		margin-bottom: 60px;
+	}
+	.&__dropdown-group {
+		background-color: $background;
+		border-radius: 45px;
+		margin-bottom: 70px;
+	}
+
+	.&__dropdown-group .dropdown {
+		padding: 10px;
+	}
+
+	.&__dropdown-group .dropdown:last-child {
+		border-right: none;
+	}
+
+}
+
+@media only screen and (max-width: 1199px){
+	.listings
+}
+
+
+@media only screen and (max-width: 991px){
+	.listings{
+		padding: 100px 0 80px 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.listings
+}
+@media only screen and (max-width: 575px) {
+	.listings
+}
