@@ -177,7 +177,18 @@
 .social {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	svg {
+		path{
+			fill: $white;
+
+		}
+		&:hover{
+			path{
+				fill: $yellow;
+			}
+		}
+	}
 }
 
 /*Social styling ends*/
