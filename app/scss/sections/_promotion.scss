@@ -31,7 +31,7 @@
 		max-width: 430px;
 	}
 
-	&-invert{
+	&_invert{
 		.promotion__body{
 			margin: 0;
 			width: 50%;
@@ -55,7 +55,7 @@
 		&__image{
 			height: 430px;
 		}
-		&-invert {
+		&_invert {
 			.promotion__image {
 				top: -200px;
 			}
@@ -72,7 +72,7 @@
 		&__image{
 			width: 30%;
 		}
-		&-invert {
+		&_invert {
 			.promotion__body{
 				width: 70%;
 			}

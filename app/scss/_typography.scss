@@ -78,17 +78,22 @@ h6, .h6 {
 	}
 
 
-	/* H3 and H5 Small Desk */
-	h3, .h3,
-	h5, h5 {
-	font-size: 28px;
-	line-height: 38px;
+	/* H3 Small Desk */
+	h3, .h3{
+		font-size: 28px;
+		line-height: 38px;
 	}
 
 	/* H4 Small Desk */
 	h4, .h4 {
 		font-size: 18px;
 		line-height: 24px;
+	}
+
+	/*  H5 Small Desk */
+	h5, h5 {
+		font-size: 20px;
+		line-height: 38px;
 	}
 
 }
@@ -107,18 +112,22 @@ h6, .h6 {
 	}
 
 
-	/* H3 and H5 Tablet */
-	h3, .h3,
-	h5, h5 {
-		font-size: 20px;
-		line-height: 34px;
+	/* H3 Small Desk */
+	h3, .h3{
+		font-size: 28px;
+		line-height: 38px;
 	}
 
-	
-	/* H4 Tablet */
+	/* H4 Small Desk */
 	h4, .h4 {
-		font-size: 26px;
-		line-height: 36px;
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	/*  H5 Small Desk */
+	h5, h5 {
+		font-size: 20px;
+		line-height: 38px;
 	}
 
 	/* P and SPAN Tablet */
@@ -146,7 +155,7 @@ h6, .h6 {
 	/* H3 and H5 Mobile */
 	h3, .h3,
 	h5, h5 {
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 31px;
 	}
 	

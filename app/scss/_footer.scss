@@ -13,7 +13,7 @@
 	&__row-2 {
 		padding-top: 40px;
 		border-top: 1px solid $light-gray;
-		text-align: center;
+		text-align: right;
 	}
 	&__social {
 		margin-top: 30px;
@@ -35,7 +35,14 @@
 }
 	
 @media only screen and (max-width: 767px){
-	.footer{}
+	.footer{
+		&__fix-size{
+			margin: 0 auto;
+		}
+		&__row-2 {
+			text-align: center;
+		}
+	}
 }
 
 @media only screen and (max-width: 575px){
