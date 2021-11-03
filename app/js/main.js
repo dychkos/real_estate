@@ -7,3 +7,5 @@ btnBurger.addEventListener('click',function (e){
     btnBurger.classList.toggle('open')
     menu.classList.toggle('open')
 })
+
+

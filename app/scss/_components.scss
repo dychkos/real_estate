@@ -2,30 +2,11 @@
  * Buttons styling
  */
 
-.button {
-	display: inline-block;
-	line-height: 1;
-	min-width: min-content;
-	white-space: nowrap;
-	transition: all .25s ease-in-out;
-	&:focus {
-		outline: none;
-	}
-	&:hover {
-		text-decoration: none;
-	}
 
-	&:disabled,
-	&[disabled] {
-		color: white !important;
-		border-color: #d7d7d7 !important;
-		background-color: #d7d7d7 !important;
-		box-shadow: none;
-	}
-}
 .btn {
 	padding: 18px 40px;
 	border-radius: 0 18px 0 0;
+	color: $black;
 	&-yellow {
 		background-color: $yellow;
 	}
@@ -98,6 +79,7 @@
 /*Card styling*/
 
 .card {
+	background-color: $background;
 	box-shadow: 0 32px 34px rgba(0, 0, 0, 0.133714);
 	cursor: pointer;
 	border-radius: 25px;
@@ -278,3 +260,4 @@ input,textarea {
 .full-width {
 	width: 100%;
 }
+
