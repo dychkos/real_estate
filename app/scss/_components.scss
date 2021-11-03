@@ -64,13 +64,55 @@
 
 /*Dropdown styling*/
 
-.dropdown select {
-	border: none;
-	font-weight: bold;
-	cursor: pointer;
+.dropdown{
+	position: relative;
+	&.open{
+		.dropdown__arrow{
+			transform: rotate(180deg);
+		}
+		.dropdown__body{
+			opacity: 1;
+		}
+	}
+	&__header{
+		cursor: pointer;
+		border-radius: 25px;
+		background-color: $background;
+		display: flex;
+		align-items: center;
+		padding: 24px;
+	}
+	&__arrow{
+		transition: transform .3s ease;
+	}
+	&__title{
+		margin-right: 10px;
+		font-weight: 700;
+		font-size: 17px;
+	}
+	&__body{
+		position: absolute;
+		overflow: hidden;
+		opacity: 0;
+		z-index: 3;
+		left: 0;
+		top: 50px;
+		width: 100%;
+		background: $white;
+		box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+		border-radius:  0  0 25px 25px;
+		transition: all .4s ease;
+	}
 
-	.form-select:focus {
-		box-shadow: none;
+	&__item{
+		padding: 18px;
+		cursor: pointer;
+		transition: all .3s ease;
+		&:hover{
+			background: $light-gray;
+			color: $white;
+		}
+
 	}
 }
 

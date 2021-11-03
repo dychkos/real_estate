@@ -9,19 +9,22 @@
 	&__title {
 		margin-bottom: 60px;
 	}
+	&__dropdown{
+		padding: 30px;
+		border-right: 1px solid $gray;
+	}
 	&__dropdown-group {
 		background-color: $background;
 		border-radius: 45px;
 		margin-bottom: 70px;
+		.col:last-child {
+			.listings__dropdown{
+				border-right: none;
+			}
+		}
 	}
 
-	&__dropdown-group .dropdown {
-		padding: 10px;
-	}
 
-	&__dropdown-group .dropdown:last-child {
-		border-right: none;
-	}
 
 }
 
