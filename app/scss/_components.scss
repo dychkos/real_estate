@@ -26,10 +26,10 @@
 .btn {
 	padding: 18px 40px;
 	border-radius: 0 18px 0 0;
-	.&-yellow {
+	&-yellow {
 		background-color: $yellow;
 	}
-	.&-black {
+	&-black {
 		background-color: $black;
 		& span {
 			color: $white;
@@ -46,13 +46,12 @@
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-
-	.& span {
+	span {
 		margin-right: 14px;
 		font-weight: 700;
 		transition: margin-right .3s ease;
 	}
-	.&:hover span {
+	&:hover span {
 		margin-right: 24px;
 	}
 }
@@ -74,7 +73,7 @@
 	height: 4px;
 	background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
 	border-radius: 2px;
-	.&-full {
+	&-full {
 		width: 100%;
 	}
 }
@@ -88,7 +87,7 @@
 	border: none;
 	font-weight: bold;
 	cursor: pointer;
-	.& .form-select:focus {
+	.form-select:focus {
 		box-shadow: none;
 	}
 }
@@ -102,32 +101,32 @@
 	cursor: pointer;
 	border-radius: 25px;
 	overflow: hidden;
-	.&__image img {
+	&__image img {
 		width: 100%;
 		object-fit: cover;
 		transition: transform .2s ease;
 	}
-	.&__image:hover img {
+	&__image:hover img {
 		transform: scale(1.1);
 	}
-	.&__title {
+	&__title {
 		padding: 30px;
 	}
-	.&__footer {
+	&__footer {
 		border-top: 1px solid $light-gray;
 	}
-	.&__footer-item {
+	&__footer-item {
 		display: flex;
 		padding: 20px;
 		align-items: center;
 		justify-content: center;
 		border-right: 1px solid $light-gray;
 	}
-	.&__footer-item:last-child {
+	&__footer-item:last-child {
 		border: none;
 	}
 
-	.&__footer-info {
+	&__footer-info {
 		font-weight: 700;
 		margin-left: 10px;
 		font-size: 17px;
@@ -142,11 +141,11 @@
 .author {
 	display: flex;
 	align-items: center;
-	.&__icon {
+	&__icon {
 		margin-right: 12px;
 	}
 
-	.&__name {
+	&__name {
 		font-size: 15px;
 		font-weight: 700;
 		&-thin {
@@ -154,12 +153,12 @@
 		}
 	}
 
-	.&__position {
+	&__position {
 		font-size: 15px;
 		font-weight: 700;
 		color: $light-gray;
 	}
-	.&__more {
+	&__more {
 		color: $yellow;
 		font-weight: 700;
 	}
@@ -195,7 +194,7 @@
 @media only screen and (max-width: 991px){
 	.burger {
 		display: flex;
-		.& .icon {
+		.icon {
 			transition-duration: 0.5s;
 			position: absolute;
 			height: 2px;
@@ -203,7 +202,7 @@
 			left: 12px;
 			background-color: #fff;
 		}
-		.& .icon:before {
+		.icon:before {
 			transition-duration: 0.5s;
 			position: absolute;
 			width: 24px;
@@ -212,7 +211,7 @@
 			content: "";
 			top: -6px;
 		}
-		.& .icon:after {
+		.icon:after {
 			transition-duration: 0.5s;
 			position: absolute;
 			width: 24px;
@@ -221,17 +220,17 @@
 			content: "";
 			top: 6px;
 		}
-		.&.open .icon {
+		&.open .icon {
 			transition-duration: 0.5s;
 			background: transparent;
 		}
-		.&.open .icon:before {
+		&.open .icon:before {
 			transform: rotateZ(45deg) scaleX(1.25) translate(4px, 4px);
 		}
-		.&.open .icon:after {
+		&.open .icon:after {
 			transform: rotateZ(-45deg) scaleX(1.25) translate(4px, -4px);
 		}
-		.&:hover {
+		&:hover {
 			cursor: pointer;
 		}
 	}

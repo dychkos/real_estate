@@ -4,21 +4,21 @@
 
 .promotion-2 {
 	padding-bottom: 150px;
-	.&__right-side {
+	&__right-side {
 		margin-top: 110px;
 		//align-self: center
 		//margin-left: 35px
 	}
-	.&__image {
+	&__image {
 		overflow: hidden;
 		border-top-left-radius: 60px;
 		margin-top: -160px;
 		box-shadow: 0px 62px 54px rgba(0, 0, 0, 0.3);
 	}
-	.&__title {
+	&__title {
 		margin-bottom: 20px;
 	}
-	.&__text {
+	&__text {
 		margin-bottom: 30px;
 		max-width: 430px;
 	}
@@ -26,7 +26,7 @@
 
 
 @media only screen and (max-width: 1199px){
-	.promotion-2
+	.promotion-2{}
 }
 
 @media only screen and (max-width: 991px) {
@@ -36,9 +36,9 @@
 }
 
 @media only screen and (max-width: 767px) {
-	.promotion-2
+	.promotion-2{}
 }
 
 @media only screen and (max-width: 575px) {
-	.promotion-2
+	.promotion-2{}
 }

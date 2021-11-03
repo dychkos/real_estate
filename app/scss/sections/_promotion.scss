@@ -5,20 +5,20 @@
 .promotion {
 	//display: flex
 	margin-top: 180px;
-	.&__right-side {
+	&__right-side {
 		margin-top: 110px;
 		//align-self: center
 		//margin-left: 35px
 	}
-	.&__image {
+	&__image {
 		overflow: hidden;
 		margin-bottom: -60px;
 	}
-	.&__title {
+	&__title {
 		margin-bottom: 20px;
 	}
 
-	.&__text {
+	&__text {
 		margin-bottom: 30px;
 		max-width: 430px;
 	}
@@ -26,7 +26,7 @@
 
 
 @media only screen and (max-width: 1199px){
-	.promotion
+	.promotion{}
 }
 
 @media only screen and (max-width: 991px){
@@ -36,9 +36,9 @@
 }
 	
 @media only screen and (max-width: 767px){
-	.promotion
+	.promotion{}
 }
 
 @media only screen and (max-width: 575px){
-	.promotion
+	.promotion{}
 }

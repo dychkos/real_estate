@@ -8,14 +8,14 @@
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	.&__body {
+	&__body {
 		max-width: 500px;
 	}
-	.&__title h2 {
+	&__title h2 {
 		color: $white;
 		margin-bottom: 20px;
 	}
-	.&__text {
+	&__text {
 		color: $white;
 		margin-bottom: 30px;
 	}
@@ -23,17 +23,17 @@
 
 
 @media only screen and (max-width: 1199px){
-	.more-info
+	.more-info{}
 }
 
 @media only screen and (max-width: 991px){
-	.more-info
+	.more-info{}
 }
 
 @media only screen and (max-width: 767px){
-	.more-info
+	.more-info{}
 }
 
 @media only screen and (max-width: 575px){
-	.more-info
+	.more-info{}
 }

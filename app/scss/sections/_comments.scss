@@ -7,20 +7,18 @@
 }
 .comment {
 	margin-bottom: 30px;
-	.&.active .&__title {
+	&.active &__title{
 		visibility: visible;
 	}
-	.&.active .&__author {
+	&.active &__author {
 		color: $white;
 		background-color: $black;
-
 	}
-	.&__title {
+	&__title {
 		visibility: hidden;
 		margin-bottom: 60px;
 	}
-
-	.&__author {
+	&__author {
 		cursor: pointer;
 		padding: 40px;
 		transition: all .3s ease;
@@ -34,28 +32,31 @@
 }
 
 @media only screen and (max-width: 1199px) {
-	.comments
+	.comments{}
 }
 
 @media only screen and (max-width: 991px) {
-	.comments
+	.comments{}
 }
 @media only screen and (max-width: 767px) {
 	.comments {
 		padding: 90px 0;
 	}
-	.comment__title {
-		visibility: visible;
-		margin-bottom: 20px;
+	.comment{
+		&__title {
+			visibility: visible;
+			margin-bottom: 20px;
+		}
+		&__author {
+			padding: 10px
+		}
+		&.active .comment__author {
+			color: $black;
+			background-color: $white;
+		}
 	}
-	.comment__author {
-		padding: 10px
-	}
-	.comment.active .comment__author {
-		color: $black;
-		background-color: $white;
-	}
+
 }
 @media only screen and (max-width: 575px) {
-	.comments
+	.comments{}
 }

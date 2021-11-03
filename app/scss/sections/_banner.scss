@@ -7,7 +7,7 @@
 	position: relative;
 	background: url("../img/house_bg.png");
 	background-size: cover;
-	.&__gradient{
+	&__gradient{
 		position: absolute;
 		z-index: -1;
 		top: 0;
@@ -16,38 +16,38 @@
 		height: 100%;
 		background: linear-gradient(198.73deg, rgba(0, 0, 0, 0.0001) 15.31%, rgba(0, 0, 0, 0.837986) 67.37%)
 	}
-	.&__body {
+	&__body {
 		padding-top: 230px
 	}
-	.&__title {
+	&__title {
 		max-width: 520px
 	}
-	.&__text {
+	&__text {
 		color: $white;
 		font-weight: 400;
 		margin-top: 20px;
 		max-width: 430px;
 	}
-	.&__footer {
+	&__footer {
 		margin-top: 180px;
 		background-color: $background;
 		padding: 40px;
 	}
 }
 @media only screen and (max-width: 1199px){
-	.banner
+	.banner{}
 }
 
 
 @media only screen and (max-width: 991px){
-	.banner
+	.banner{}
 }
 
 	
 @media only screen and (max-width: 767px){
-	.banner
+	.banner{}
 }
 
 @media only screen and (max-width: 575px){
-	.banner
+	.banner{}
 }

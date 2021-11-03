@@ -8,7 +8,7 @@
 	position: relative;
 	color: $white;
 	background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 100.47%);
-	.&__body{
+	&__body{
 		padding: 25px 0;
 		border-top: 1px solid $light-gray;
 	}
@@ -16,17 +16,17 @@
 
 
 @media only screen and (max-width: 1199px){
-	.page-header
+	.page-header{}
 }
 
 @media only screen and (max-width: 991px){
-	.page-header
+	.page-header{}
 }
 
 @media only screen and (max-width: 767px){
-	.page-header
+	.page-header{}
 }
 
 @media only screen and (max-width: 575px){
-	.page-header
+	.page-header{}
 }

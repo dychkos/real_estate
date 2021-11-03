@@ -3,7 +3,7 @@
 	top: 0;
 	width: 100%;
 	z-index: 3;
-	.& .container {
+	.container {
 		padding-top: 32px;
 		display: flex;
 		align-items: center;
@@ -19,7 +19,7 @@
 .nav {
 	display: flex;
 	align-items: center;
-	.&__item {
+	&__item {
 		margin-right: 60px;
 		font-size: 15px;
 		font-weight: bold;
@@ -40,13 +40,13 @@
 
 
 @media only screen and (max-width: 1199px) {
-	.header
+	.header{}
 }
 
 
 @media only screen and (max-width: 991px) {
 	.header{
-		.&__nav {
+		&__nav {
 			position: fixed;
 			right: -300px;
 			flex-direction: column;
@@ -67,8 +67,8 @@
 }
 
 @media only screen and (max-width: 767px) {
-	.header
+	.header{}
 }
 @media only screen and (max-width: 575px) {
-	.header
+	.header{}
 }
