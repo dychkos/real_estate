@@ -7,6 +7,7 @@
 	padding: 18px 40px;
 	border-radius: 0 18px 0 0;
 	color: $black;
+
 	&-yellow {
 		background-color: $yellow;
 	}
@@ -15,6 +16,12 @@
 		& span {
 			color: $white;
 		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.btn{
+		padding: 10px 28px;
 	}
 }
 /*
@@ -27,13 +34,15 @@
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-	span {
-		margin-right: 14px;
+	&__item {
+		margin-right: 18px;
 		font-weight: 700;
 		transition: margin-right .3s ease;
 	}
-	&:hover span {
-		margin-right: 24px;
+	&:hover {
+		.text-arrow__item{
+			margin-right: 24px;
+		}
 	}
 }
 
@@ -107,12 +116,13 @@
 	}
 	&__body{
 		position: absolute;
-		overflow: hidden;
+		overflow: auto;
 		display: none;
 		z-index: 6;
 		left: 0;
 		top: 50px;
 		width: 100%;
+		max-height: 380px;
 		background: $white;
 		box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
 		border-radius:  0  0 25px 25px;
@@ -158,18 +168,16 @@
 	&__title {
 		padding: 30px;
 	}
-	&__footer {
-		border-top: 1px solid $light-gray;
-	}
 	&__footer-item {
 		display: flex;
 		padding: 20px;
 		align-items: center;
 		justify-content: center;
 		border-right: 1px solid $light-gray;
+		border-top: 1px solid $light-gray;
 	}
 	&__footer-item:last-child {
-		border: none;
+		border-right: none;
 	}
 
 	&__footer-info {
@@ -181,6 +189,27 @@
 
 
 /*Cards styling ends*/
+
+/*Paper styling*/
+
+.paper {
+	background-color: $background;
+	box-shadow: 0 32px 34px rgba(0, 0, 0, 0.133714);
+	border-radius: 25px;
+	overflow: hidden;
+	&__title{
+		padding: 30px;
+		border-bottom: 1px solid $light-gray;
+	}
+	&__body{
+		padding: 30px;
+		font-size: 15px;
+		color: $light-gray;
+	}
+}
+
+
+/*Paper styling ends*/
 
 
 /*Author styling*/
@@ -232,6 +261,20 @@
 }
 
 /*Social styling ends*/
+
+/*Feature styling*/
+.feature{
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	&__icon{
+		margin: 0 10px;
+	}
+	&__item{
+		white-space: nowrap;
+	}
+}
+/*Feature styling ends*/
 
 
 /*Burger styling*/
@@ -318,3 +361,17 @@ input,textarea {
 	width: 100%;
 }
 
+.swiper {
+	width: 100%;
+	height: 100%;
+
+}
+.swiper-slide {
+	max-width: 420px;
+}
+
+@media only screen and (max-width: 991px){
+	.swiper-slide {
+		max-width: 300px;
+	}
+}

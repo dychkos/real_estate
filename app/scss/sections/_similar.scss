@@ -1,0 +1,39 @@
+/*
+ * Similar section styling
+ */
+
+.similar{
+	padding-top:150px;
+	padding-bottom:630px ;
+	background-color: $background-gray;
+	&__swiper{
+		position: absolute;
+		margin-top: 70px;
+		.swiper-slide {
+			.card{
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px){
+	.similar{
+
+	}
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+	
+@media only screen and (max-width: 767px) {
+	.similar {
+
+	}
+}
+@media only screen and (max-width: 575px) {
+	.similar {
+
+	}
+}

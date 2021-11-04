@@ -3,9 +3,13 @@
 	padding: 80px 0;
 	color: $white;
 	&__nav {
+		margin-top: 10px;
 		font-size: 15px;
 		font-weight: 400;
 		color: $light-gray;
+	}
+	&__link{
+		margin-bottom: 10px;
 	}
 	&__row-1 {
 		margin-bottom: 70px;

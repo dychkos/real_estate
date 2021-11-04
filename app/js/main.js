@@ -52,6 +52,39 @@ class Select {
 
 }
 
+class PhotoPreview{
+    constructor($currentPhoto,$photoArray) {
+        this.$currentPhoto = $currentPhoto;
+        this.$photoArray = $photoArray;
+        this.init();
+    }
+
+    init(){
+        this.changePreviewPhoto = this.changePreviewPhoto.bind(this);
+        this.deactivatePreviews = this.deactivatePreviews.bind(this);
+
+        this.$currentPhoto.setAttribute('src',this.$photoArray[0].getAttribute('src'));
+        this.$photoArray[0].classList.add('active');
+        this.$photoArray.forEach(preview=>{
+            preview.addEventListener('click',this.changePreviewPhoto);
+        })
+    }
+
+    deactivatePreviews () {
+        photoPreviews.forEach(photoPreviews=>{
+            if(photoPreviews.classList.contains('active')){
+                photoPreviews.classList.remove('active');
+            }
+        })
+    }
+
+    changePreviewPhoto (event) {
+        this.deactivatePreviews();
+        photo.setAttribute('src',event.target.getAttribute('src'));
+        event.target.classList.add('active');
+    }
+
+}
 
 let btnBurger = document.querySelector('.burger');
 let menu = document.querySelector('.header__nav');
@@ -62,8 +95,27 @@ btnBurger.addEventListener('click',function (e){
     menu.classList.toggle('open')
 })
 
+
+const photoPreviews = document.querySelectorAll("[data-photo]");
+const photo = document.querySelector("#house-preview");
+const swiperNode = document.querySelector(".sim-swiper");
+
+if(photoPreviews && photo){
+    let photoPreview = new PhotoPreview (photo,photoPreviews);
+}
+
+if(swiperNode){
+    let swiper = new Swiper(".sim-swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+
+}
+
 dropdowns.forEach(dropdown=>{
-   let select = new Select(dropdown);
-
+    let select = new Select(dropdown);
 })
-

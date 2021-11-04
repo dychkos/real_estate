@@ -12,13 +12,9 @@ h1, h2, h3, h4, h5, h6,
 
 p, .p, span {
 	color: inherit;
-	font-size: 20px;
+	font-size: 15px;
 	line-height: 28px;
 	font-weight: inherit;
-}
-/* p text-body Desk */
-.text-body {
-	font-weight: 400;
 }
 
 /* H1 Desk */
@@ -52,16 +48,18 @@ h4, .h4 {
 }
 /* H5 Desk */
 h5, .h5 {
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 28px;
-	font-weight: 700;
+	color: $light-gray;
+	font-weight: 400;
 }
 
 /* H6 Desk */
 h6, .h6 {
-	font-size: 15px;
+	font-size: 20px;
+	color: inherit;
 	line-height: 30px;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 @media only screen and (max-width: 1199px){
@@ -84,17 +82,13 @@ h6, .h6 {
 		line-height: 38px;
 	}
 
-	/* H4 Small Desk */
-	h4, .h4 {
+	/* H4, H5 Small Desk */
+	h4, .h4, h5, h5 {
 		font-size: 18px;
-		line-height: 24px;
-	}
-
-	/*  H5 Small Desk */
-	h5, h5 {
-		font-size: 20px;
 		line-height: 38px;
 	}
+
+
 
 }
 @media only screen and (max-width: 991px){
@@ -108,31 +102,31 @@ h6, .h6 {
 	/* H2 Tablet */
 	h2, .h2 {
 		font-size: 28px;
-		line-height: 32px;
+		line-height: 38px;
 	}
 
 
 	/* H3 Small Desk */
 	h3, .h3{
 		font-size: 28px;
-		line-height: 38px;
+		line-height: 32px;
 	}
 
 	/* H4 Small Desk */
 	h4, .h4 {
-		font-size: 24px;
-		line-height: 24px;
+		font-size: 20px;
+		line-height: 30px;
 	}
 
 	/*  H5 Small Desk */
 	h5, h5 {
-		font-size: 20px;
-		line-height: 38px;
+		font-size: 16px;
+		line-height: 28px;
 	}
 
 	/* P and SPAN Tablet */
 	p, .p, span {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 22px;
 	}
 }
@@ -151,18 +145,27 @@ h6, .h6 {
 		line-height: 39px;
 	}
 
-
-	/* H3 and H5 Mobile */
-	h3, .h3,
-	h5, h5 {
-		font-size: 18px;
-		line-height: 31px;
+	/* H3 Mobile */
+	h3, .h3{
+		font-size: 20px;
+		line-height: 28px;
 	}
-	
+
 	/* H4 Mobile */
 	h4, .h4 {
 		font-size: 18px;
-		line-height: 39px;
+		line-height: 25px;
+	}
+
+	/*  H5 Mobile */
+	h5, .h5 {
+		font-size: 16px;
+		line-height: 28px;
+	}
+	/*  H6 Mobile */
+	h6, .h6 {
+		font-size: 16px;
+		line-height: 28px;
 	}
 
 
