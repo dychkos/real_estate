@@ -10,8 +10,8 @@
 		margin-bottom: 60px;
 	}
 	&__dropdown{
-		padding: 30px;
-		border-right: 1px solid $gray;
+		padding: 50px 30px;
+		border-right: 1px solid $light-gray;
 	}
 	&__dropdown-group {
 		background-color: $background;
@@ -36,11 +36,18 @@
 @media only screen and (max-width: 991px){
 	.listings{
 		padding: 180px 0 80px 0;
+
+		&__dropdown{
+			padding:30px 20px;
+			border-right:none;
+		}
 	}
 }
 
 @media only screen and (max-width: 767px) {
-	.listings{}
+	.listings{
+
+	}
 }
 @media only screen and (max-width: 575px) {
 	.listings{}
