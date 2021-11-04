@@ -13,9 +13,11 @@
 	}
 	&__row-1 {
 		margin-bottom: 70px;
+		row-gap: 20px;
 	}
 	&__row-2 {
 		padding-top: 40px;
+		row-gap: 30px;
 		border-top: 1px solid $light-gray;
 	}
 	&__social {

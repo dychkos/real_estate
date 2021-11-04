@@ -19,6 +19,11 @@
 			margin-bottom: 20px;
 			height: 470px;
 		}
+		&_small{
+			margin: 0 auto;
+			height: 80px;
+			width: 80px;
+		}
 		img{
 			border-top-right-radius: 10%;
 			width: 100%;
@@ -67,6 +72,11 @@
 		padding-bottom: 40px;
 		&__photo_big{
 			height: 320px;
+		}
+		&__photo_small{
+			height: 100%;
+			width: 100%;
+
 		}
 	}
 }

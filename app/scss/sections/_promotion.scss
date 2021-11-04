@@ -67,14 +67,17 @@
 @media only screen and (max-width: 767px){
 	.promotion{
 		&__body{
-			margin-left: 30%;
+			margin-left: 0;
+			padding-bottom: 40px;
 		}
 		&__image{
-			width: 30%;
+			position: initial;
+			max-height: 400px;
+			width: 100%;
 		}
 		&_invert {
 			.promotion__body{
-				width: 70%;
+				width: 100%;
 			}
 		}
 	}

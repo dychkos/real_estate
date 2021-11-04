@@ -4,6 +4,9 @@
 
 .comments {
 	padding: 150px 0;
+	&__body{
+		row-gap: 30px;
+	}
 }
 .comment {
 	margin-bottom: 30px;

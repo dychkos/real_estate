@@ -10,9 +10,16 @@ h1, h2, h3, h4, h5, h6,
 	font-weight: normal;
 }
 
-p, .p, span {
+p, .p,{
 	color: inherit;
 	font-size: 15px;
+	line-height: 28px;
+	font-weight: inherit;
+}
+
+span {
+	color: inherit;
+	font-size: 17px;
 	line-height: 28px;
 	font-weight: inherit;
 }
