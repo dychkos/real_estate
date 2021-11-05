@@ -21,8 +21,8 @@
 		}
 		&_small{
 			margin: 0 auto;
-			height: 80px;
-			width: 80px;
+			max-height: 80px;
+			max-width: 80px;
 		}
 		img{
 			border-top-right-radius: 10%;
@@ -64,7 +64,8 @@
 }
 
 @media only screen and (max-width: 991px){
-	.house{}
+	.house{
+	}
 }
 
 @media only screen and (max-width: 767px){
@@ -73,11 +74,7 @@
 		&__photo_big{
 			height: 320px;
 		}
-		&__photo_small{
-			height: 100%;
-			width: 100%;
 
-		}
 	}
 }
 @media only screen and (max-width: 575px){
