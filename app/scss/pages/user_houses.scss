@@ -1,0 +1,33 @@
+/*
+ * Example section styling
+ */
+
+.houses{
+  &__house{
+    margin-bottom: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 1199px){
+  .houses{
+
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .houses {
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .houses {
+
+  }
+}
+@media only screen and (max-width: 575px) {
+  .houses {
+
+  }
+}

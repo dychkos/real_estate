@@ -78,11 +78,36 @@
 
 .dropdown{
 	position: relative;
+	&_bordered{
+		.dropdown__header{
+			border: 1px solid $light-gray;
+		}
+	}
+	&_multyselect{
+		.dropdown__header{
+			padding: 16px;
+		}
+		.dropdown__multy{
+			background-color: $yellow;
+			border-radius: 18px;
+			color: #000;
+			padding: 8px 14px;
+			cursor: pointer;
+			&:after{
+				content: "X";
+				margin-left: 12px;
+				color: $gray;
+			}
+		}
+	}
 
 
 	&.open{
 		.dropdown__arrow{
 			transform: rotate(180deg);
+		}
+		.dropdown__header{
+			border-radius: 25px 25px 0  0;
 		}
 		.dropdown__body{
 			display: block;
@@ -90,6 +115,7 @@
 		.dropdown__backdrop{
 			display: block;
 		}
+
 	}
 	&__backdrop{
 		position: fixed;
@@ -116,6 +142,9 @@
 		margin-right: 10px;
 		font-weight: 700;
 		font-size: 17px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
 	}
 	&__body{
 		position: absolute;
@@ -123,7 +152,6 @@
 		display: none;
 		z-index: 6;
 		left: 0;
-		top: 50px;
 		width: 100%;
 		max-height: 380px;
 		background: $white;
@@ -226,6 +254,11 @@
 	align-items: center;
 	&__icon {
 		margin-right: 12px;
+		img{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
 	}
 
 	&__name {
@@ -295,6 +328,7 @@
 	background-color: $yellow;
 	border-radius: 50%;
 	right: 20px;
+	top: 20px;
 	transition-duration: 0.5s;
 }
 
@@ -328,15 +362,20 @@
 			content: "";
 			top: 6px;
 		}
-		&.open .icon {
-			transition-duration: 0.5s;
-			background: transparent;
-		}
-		&.open .icon:before {
-			transform: rotateZ(45deg) scaleX(1.25) translate(4px, 4px);
-		}
-		&.open .icon:after {
-			transform: rotateZ(-45deg) scaleX(1.25) translate(4px, -4px);
+		&.open{
+			background-color: #fff;
+			.icon {
+				background-color: transparent;
+				transition-duration: 0.5s;
+				&:before {
+					background-color: $yellow;
+					transform: rotateZ(45deg) scaleX(1.25) translate(4px, 4px);
+				}
+				&:after {
+					background-color: $yellow;
+					transform: rotateZ(-45deg) scaleX(1.25) translate(4px, -4px);
+				}
+			}
 		}
 		&:hover {
 			cursor: pointer;
@@ -348,12 +387,17 @@
 /*Burger styling ends*/
 
 /*Input styling*/
-input,textarea {
+input[type="text"],input[type="email"],input[type="number"],input[type="password"],textarea {
 	border: 1px solid #979797;
 	width: 100%;
 	padding: 20px 18px;
 	border-radius: 10px;
 }
+
+input[type="checkbox"] {
+    display: inline-block;
+}
+
 
 textarea { resize: vertical; }
 /*Input styling ends*/
@@ -377,9 +421,46 @@ textarea { resize: vertical; }
 /*Swiper styling end */
 
 
+/*Input file styling */
+input[type="file"] {
+	display: none;
+}
+
+
+.file_label {
+	cursor: pointer;
+	display: block;
+	width: 250px;
+	padding: 14px;
+	background-color: $yellow;
+	color: $black;
+	text-align: center;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out
+}
+
+/*Input file styling end */
+
+.file_label:hover {
+	background-color: #f39c12;
+	color: #000;
+}
+
 /*Additional modifications styling */
 .yellow {
 	color: $yellow;
+}
+
+.link{
+	color: $yellow;
+	font-weight: 700;
+	&:hover{
+		text-decoration: underline;
+		color: $yellow;
+	}
+	&:visited{
+		color: $yellow;
+	}
 }
 
 .gray {
@@ -387,4 +468,10 @@ textarea { resize: vertical; }
 }
 .full-width {
 	width: 100%;
+}
+
+.validation-fail{
+	font-size: 14px;
+	color: #d02424;
+	margin: 0;
 }

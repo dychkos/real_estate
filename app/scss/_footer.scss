@@ -44,10 +44,28 @@
 	
 @media only screen and (max-width: 767px){
 	.footer{
-		&__fix-size{
-			margin: 0 auto;
+		padding-bottom: 130px;
+		position: relative;
+		&__col_absolute{
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			width: max-content;
+			left: 0;
+			right: 0;
+			bottom: 20px;
+			text-align: center;
 		}
 		&__row-2 {
+			border: none;
+			text-align: center;
+			padding: 0;
+		}
+		&__title{
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		&__col_right{
 			text-align: center;
 		}
 	}

@@ -24,8 +24,6 @@
 		}
 	}
 
-
-
 }
 
 @media only screen and (max-width: 1199px){
@@ -39,7 +37,14 @@
 
 		&__dropdown{
 			padding:30px 20px;
-			border-right:none;
+		}
+
+		&__dropdown-group {
+			.col:nth-child(even){
+				.listings__dropdown{
+					border-right: none;
+				}
+			}
 		}
 	}
 }

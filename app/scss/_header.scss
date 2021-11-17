@@ -10,6 +10,9 @@
 		justify-content: space-between;
 		position: relative;
 	}
+	&__mobile-logo{
+		display: none;
+	}
 }
 
 /*
@@ -19,6 +22,7 @@
 .nav {
 	display: flex;
 	align-items: center;
+
 	&__item {
 		margin-right: 60px;
 		font-size: 15px;
@@ -46,22 +50,49 @@
 
 @media only screen and (max-width: 991px) {
 	.header{
+		&__mobile-logo{
+			display: block;
+			position: absolute;
+			top: 30px;
+			left: 35px;
+		}
 		&__nav {
+			display: flex;
 			position: fixed;
-			right: -300px;
+			right: 100%;
 			flex-direction: column;
-			gap: 20px;
-			padding-top: 80px;
-			width: 300px;
+			justify-content: center;
+			width: 100%;
 			height: 100vh;
 			background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 45.25%);
 			top: 0;
 			transition: right .3s ease;
 
+			.nav__item{
+				font-size: 25px;
+				margin-right: 0;
+				&_absolute{
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					.btn{
+						width: 100%;
+					}
+					.text-arrow{
+						justify-content: center;
+					}
+				}
+			}
+
 			&.open {
-				right: 0
+				right: 0;
 			}
 		}
+	}
+	.nav{
+		flex-direction: column;
+		gap: 20px;
 	}
 
 }
